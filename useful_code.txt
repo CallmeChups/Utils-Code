@@ -1,0 +1,2 @@
+#CHANGE Field's Type in Mongodb (run in mongodb shell)
+db.new_collection.find().forEach(function(obj){ obj.Class= new NumberInt(obj.Class); db.new_collection.save(obj);});
